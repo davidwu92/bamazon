@@ -15,7 +15,7 @@ const displayItems = () => {
   db.query('SELECT * FROM products', (e, products)=>{
     if (e) {console.log(e)}
     console.log(products)
-    customerInput(products.length) //Passing the max itemID possible into function
+    customerInput(products.length) //Passing the max itemID possible into function.
   })
 }
 displayItems()
